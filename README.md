@@ -1,2 +1,2 @@
 # Interfaces
-Proyecto personal donde buscaré poder crear la interfaz de un sitio de internet que tengo en mente.
+Proyecto personal donde creo diferentes interfaces de un sitio de internet.
