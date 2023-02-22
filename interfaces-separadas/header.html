@@ -29,13 +29,24 @@
         .logContainer img{
             width: 80px;
         }
-        .logContainer p{
+        .logContainer p:nth-child(1){
             color: var(--white);
             font-size: var(--bd);
             margin: 0 0 0 20px;
             display: flex;
             align-items: center;
-
+        }
+        .logContainer p:nth-child(2){
+            color: rgba(255, 255, 255, 0.653);
+            font-size: var(--lg);
+            margin: 0 0 0 20px;
+            display: flex;
+            align-items: center;
+        }
+        .logContainer div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .detailsContainer{
             display: flex;
@@ -55,13 +66,21 @@
         .detailsContainer a:hover{
             background: #427fce;
         }
-        .detailsContainer p{
+        .detailsContainer p:nth-child(3){
             background: var(--c4);
             margin: -39px 20px 0 -50px;
             padding: 3px;
             color: var(--white);
             border-radius: 50%;
             border: 1px solid var(--c4);
+        }
+        .detailsContainer p:nth-child(1){
+            color: var(--c2);
+            margin-right: 40px;
+        }
+        .detailsContainer p:nth-child(1):hover{
+            color: var(--white);
+            cursor: pointer;
         }
         .bSettingsContainer{
             display: flex;
@@ -90,7 +109,10 @@
     <header id="header">
         <div class="logContainer">
             <img src="/Interfaces/interfaces-separadas/assets/JW.Territorios.png" alt="Logo">
+            <div> 
             <p>JW.Territorios</p>
+            <p>jose.lmy2004@gmail.com</p>
+            </div>
         </div>
         <div class="detailsContainer">
             <a class="details" href="#">Territories</a>
