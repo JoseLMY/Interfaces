@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{
+            --lg: 12px;
+            --md: 20px;
+            --bd: 30px;
+            --white: #ffffff;
+            --black: #000;
+            --c1: #2b558c;
+            --c2: #b4b4b4;
+            --c3: #3db600;
+            --c4: #ff7b00;
+        }
+        body{
+            margin: 0;
+        }
+        #topBarContainer{
+            display: flex;
+            background: var(--c1);
+        }
+        .logoTopBar{
+            width: 70px;
+        }
+        .topBar{
+            display: flex;
+        }
+        .topBar p{
+            color: var(--white);
+            font-size: var(--bd);
+            margin: 0 0 0 20px;
+            display: flex;
+            align-items: center;
+        }
+        .bCreateAccountTopBar{
+            background: var(--c1);
+            border: 1px solid var(--white);
+            color: var(--white);
+            border-radius: 6px;
+            width: 200px;
+            height: 64%;
+            margin-right: 30px;
+        }
+        .bCreateAccountTopBar:hover{
+            background: #427dcb;
+            cursor: pointer;
+        }
+        .bCreateAccountTopBarContainer{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        @media (max-width: 640px){
+            .topBar {
+                height: 50px;
+            }
+            .topBar img{
+                display: none;
+            }
+        }
+    </style>
+    <title>Top Bar</title>
+</head>
+<body>
+    <section id="topBarContainer">
+        <div class="topBar">
+            <img src="/Interfaces/interfaces-separadas/assets/JW.Territorios.png" alt="logo" class="logoTopBar">
+            <p>JW.Territorios</p>
+        </div>
+        <div class="bCreateAccountTopBarContainer">
+            <button class="bCreateAccountTopBar">Create Account</button>
+        </div>
+    </section>
+</body>
+</html>
