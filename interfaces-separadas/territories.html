@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{
+            --lg: 12px;
+            --md: 20px;
+            --bd: 30px;
+            --white: #ffffff;
+            --black: #000;
+            --c1: #2b558c;
+            --c2: #b4b4b4;
+            --c3: #3db600;
+            --c4: #ff7b00;
+        }
+        body{
+            margin: 0;
+        }
+        #containerTerritories{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            border: 1px solid var(--c2);
+        }
+        #containerTerritories button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .territoryData{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .territoryData p{
+            font-size: 18px;
+            margin: 0;
+        }
+        .territoryData p:nth-child(2){
+            color: var(--c2);
+            font-size: var(--lg);
+        }
+        .imgTerritorie{
+            width: 40px;
+            height: 35px;
+        }
+        .buttonTerritory{
+            background: var(--white);
+            border: none;
+            margin-top: 5px;
+        }
+        .buttonTerritory:hover{
+            background: var(--c1);
+            cursor: pointer;
+        }
+    </style>
+    <title>Territories</title>
+</head>
+<body>
+    <div id="containerTerritories">
+        <button class="buttonTerritory">
+            <div class="territoryData">
+                <p>Asovica</p>
+                <p>09/03/2023</p>
+            </div>
+            <img class="imgTerritorie" src="/assets/JW.Territorios.png" alt="">
+        </button>
+        <button class="buttonTerritory">
+            <div class="territoryData">
+                <p>Cementerio</p>
+                <p>15/03/2023</p>
+            </div>
+            <img class="imgTerritorie" src="/assets/JW.Territorios.png" alt="">
+        </button>
+        <button class="buttonTerritory">
+            <div class="territoryData">
+                <p>Candelaria</p>
+                <p>21/03/2023</p>
+            </div>
+            <img class="imgTerritorie" src="/assets/JW.Territorios.png" alt="">
+        </button>
+        <button class="buttonTerritory">
+            <div class="territoryData">
+                <p>Valles de Cajica</p>
+                <p>30/03/2023</p>
+            </div>
+            <img class="imgTerritorie" src="/assets/JW.Territorios.png" alt="">
+        </button>
+        <button class="buttonTerritory">
+            <div class="territoryData">
+                <p>El Pomar</p>
+                <p>30/03/2023</p>
+            </div>
+            <img class="imgTerritorie" src="/assets/JW.Territorios.png" alt="">
+        </button>
+        <button class="buttonTerritory">
+            <div class="territoryData">
+                <p>La Cumbre</p>
+                <p>30/03/2023</p>
+            </div>
+            <img class="imgTerritorie" src="/assets/JW.Territorios.png" alt="">
+        </button>
+        <button class="buttonTerritory">
+            <div class="territoryData">
+                <p>Aguanica</p>
+                <p>30/03/2023</p>
+            </div>
+            <img class="imgTerritorie" src="/assets/JW.Territorios.png" alt="">
+        </button>
+        <button class="buttonTerritory">
+            <div class="territoryData">
+                <p>Quebradas del Campo</p>
+                <p>30/03/2023</p>
+            </div>
+            <img class="imgTerritorie" src="/assets/JW.Territorios.png" alt="">
+        </button>
+    </div>
+</body>
+</html>
