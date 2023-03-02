@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{
+            --lg: 12px;
+            --md: 20px;
+            --bd: 30px;
+            --white: #ffffff;
+            --black: #000;
+            --c1: #2b558c;
+            --c2: #b4b4b4;
+            --c3: #3db600;
+            --c4: #ff7b00;
+        }
+        body{
+            margin: 0;
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+        }
+        .config{
+            box-shadow: 1px 1px 12px 1px #919191;
+        }
+        .profileData{
+            display: flex;
+        }
+        .profileData img{
+            margin: 5px 0 0 5px;
+            border-radius: 50%;
+        }
+        .p{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .p p{
+            margin: 5px 0 0 22px;
+        }
+        .p :nth-child(2){
+            margin-top: 0;
+            color: var(--c2);
+        }
+        .moreTools{
+            margin: 40px 0 0 0 ;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .moreTools button{
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            height: 30px;
+            width: 100%;
+            margin: 0 15px 0 5px;
+            border: none;
+            background: var(--white);
+        }
+        .moreTools button:hover{
+            background: var(--c2);
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 15px 0 5px;
+        }
+        .bLogOut{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .bLogOut button{
+            height: 30px;
+            border: none;
+            color: rgb(255, 255, 255);
+            background: #ff9f44;
+            width: 100%;
+        }
+        .bLogOut button:hover{
+            background: var(--c4);
+        }
+    </style>
+    <title>Config</title>
+</head>
+<body>
+    <div id="container">
+        <div class="config">
+            <div class="profileData">
+                <img src="/assets/userImg.png" alt="Profil Picture" width="50px">
+                <div class="p">
+                    <p>Jose Luis Minota Yacue</p>
+                    <p>Congregacion Norte, de Cajicá</p>
+                </div>
+            </div>
+            <div class="moreTools">
+                <button> <p>My Account</p></button>
+                <button><p>Settings & Privacity</p></button>
+                <button><p>Help & Support</p></button>
+            </div>
+            <div class="bLogOut">
+                <button>Log Out</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
