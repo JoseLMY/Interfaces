@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{
+            --lg: 12px;
+            --md: 20px;
+            --bd: 30px;
+            --white: #ffffff;
+            --black: #000;
+            --c1: #2b558c;
+            --c2: #b4b4b4;
+            --c3: #3db600;
+            --c4: #ff7b00;
+        }
+        body{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .messagesContainer{
+            width: 360px;
+            height: 420px;
+            border-radius: 16px;
+            box-shadow: 1px 1px 8px 0 black;
+            overflow: hidden
+            ;
+        }
+        .headerMessages{
+            display: flex;
+            align-items: center;
+            padding: 0 15px 0 15px;
+            border-bottom: #828282 solid 1px;
+            
+        }
+        .headerMessages p{
+            font-size: var(--md);
+            margin-left: 12px;
+        }
+        .headerMessages img{
+            width: 30px;
+            height: 30px;
+            transform: scaleX(-1);
+        }
+        .headerMessages img:hover{
+            background: #f1f1f1 ;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 1px 1px 4px 0 black;
+        }
+        .headerMessages button{
+            margin-left: 60px;
+            width: 150px;
+            height: 42px;
+            border: none;
+            border-radius: 6px;
+        }
+        .headerMessages button:hover{
+            cursor: pointer;
+            box-shadow: 1px 1px 4px 0 black;
+        }
+        .everyMessages{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 10px 10px 0 10px;
+            height: 350px;
+            width: 97%;
+            overflow-y: scroll;
+        }
+        .everyMessages::-webkit-scrollbar{
+            width: 10px;
+        }
+        .everyMessages::-webkit-scrollbar-thumb{
+            background: var(--c1);
+        }
+        .message{
+            border-bottom: 1px solid #b3b3b3;
+            padding: 5px;
+        }
+        .message p:nth-child(1){
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .message p{
+            margin: 0 0 6px 0;
+        }
+        .message:hover{
+            background: #b3b3b3;
+        }
+    </style>
+    <title>Messages</title>
+</head>
+<body>
+    <div class="messagesContainer">
+        <div class="headerMessages">
+            <img src="/interfaces-separadas/assets/back.png" alt="Back">
+            <p>Messages</p>
+            <button>Create Message</button>
+        </div>
+        <div class="everyMessages">
+            <div class="message">
+            <p><strong>Jose Luis Minota Yacue</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            
+            <div class="message">
+                <p> <strong>Daniel Montaño</strong> </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="message">
+                <p> <strong>Laureano Caviedes</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="message">
+                <p> <strong>Mauricio Rojas</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="message">
+                <p><strong>Francisco Contreras</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="message">
+                <p> <strong>David Gomez</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
