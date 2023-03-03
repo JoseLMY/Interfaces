@@ -150,34 +150,33 @@ body{
     flex-direction: column;
 }
 .inf{
+    background: #efefef;
     display: flex;
-    background: #eeeeee;
     justify-content: space-between;
-    border-radius: 10px;
+    border-bottom: 1px solid rgb(146, 146, 146);
 }
 .infoTerritories{
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
     padding: 0 0 0 22px;
-    box-sizing: border-box;
-    background: #eeeeee;
 }
 .infoTerritories p{
-    color: #707070;
+    color:rgb(50, 50, 50);
     margin: 4px 0 4px 10px;
-    font-size: var(--md);
+    font-size: 20px;
+}
+.infoTerritories span{
+    color: #828282;
+    font-size: 16px;
 }
 .territoryMap{
     height: 400px;
-    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px 0 0 0;
     background: #f1f1f1;
-    border-radius: 10px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .sendReport{
@@ -288,13 +287,12 @@ body{
 .messagesContainer{
     background: var(--white);
     position: absolute;
-    margin: 10px 10px 0 1120px;
-    width: 360px;
+    margin: 0 10px 0 930px;
+    width: 520px;
     height: 420px;
     border-radius: 16px;
     box-shadow: 1px 1px 8px 0 black;
-    overflow: hidden
-    ;
+    overflow: hidden;
 }
 .headerMessages{
     display: flex;
