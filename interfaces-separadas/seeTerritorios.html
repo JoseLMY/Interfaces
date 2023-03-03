@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{
+            --lg: 12px;
+            --md: 20px;
+            --bd: 30px;
+            --white: #ffffff;
+            --black: #000;
+            --c1: #2b558c;
+            --c2: #b4b4b4;
+            --c3: #3db600;
+            --c4: #ff7b00;
+        }
+        body{
+            margin: 0;
+        }
+        #seeTerritoriesContainer{
+            width: 860px;
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .infoTerritories{
+            border-radius: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+            background: var(--c1);
+            margin: 0 0 30px 0
+        }
+        .infoTerritories p{
+            color: var(--white);
+            margin: 4px 0 4px 10px;
+        }
+        .territoryMap{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        .sendReport{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .sendReport button{
+            background: var(--c4);
+            border: none;
+            color: var(--white);
+            border-radius: 6px;
+            width: 200px;
+            height: 42px;
+            margin-right: 30px;
+            font-family:fantasy;
+            letter-spacing: 2px;
+        }
+        .sendReport button:hover{
+            cursor: pointer;
+            box-shadow: 1px 3px 12px 3px #000000;
+        }
+    </style>
+    <title>See Territories</title>
+</head>
+<body>
+    <div id="seeTerritoriesContainer">
+        <div class="infoTerritories">
+            <p>Territory: Tairona</p>
+            <p>Date: 21/03/2023</p>
+            <p>Hour: 09:00 am</p>
+            <p>Meeting: Salon del Reino</p>
+        </div>
+        <div class="territoryMap">
+            <img src="/assets/territory.png" alt="">
+        </div>
+        <div class="sendReport">
+            <button>Enviar Reporte</button>
+        </div>
+    </div>
+</body>
+</html>
