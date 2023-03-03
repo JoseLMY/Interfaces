@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{
+            --lg: 12px;
+            --md: 20px;
+            --bd: 30px;
+            --white: #ffffff;
+            --black: #000;
+            --c1: #2b558c;
+            --c2: #b4b4b4;
+            --c3: #3db600;
+            --c4: #ff7b00;
+        }
+        body{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .form{
+            width: 420px;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            background: #efefef;
+        }
+        .reportData{
+            display: flex;
+            flex-direction: column;
+        }
+        .reportData p{
+            margin: 8px 0 4px 40px;
+        }
+        .inputs {
+            border: none;
+            width: 90%;
+            height: 30px;
+            margin: 0 0 22px 22px;
+            border-radius: 10px;
+        }
+        .reportData :nth-child(8){
+            height: 90px;
+        }
+        .wasOver p{
+            margin: 0 0 0 25px;
+        }
+        .wasOver div{
+            display: flex;
+            margin: 20px 0 40px 0;
+        }
+        .bSendReport{
+            background: var(--c3);
+            border: none;
+            color: var(--white);
+            border-radius: 6px;
+            width: 200px;
+            height: 42px;
+            margin: 0 0 15px 100px;
+            font-family: fantasy;
+            letter-spacing: 2px;
+        }
+        .bSendReport:hover{
+            cursor: pointer;
+            box-shadow: 1px 1px 8px 0 #000000;
+        }
+        
+    </style>
+    <title>Send Report</title>
+</head>
+<body>
+    <div class="formContainer">
+        <form action="" class="form">
+            <div class="reportData">
+                <p>Captain:</p>
+                <input class="inputs" type="text" placeholder="Your Full Name">
+                <p>Territory:</p>
+                <input class="inputs" type="text" placeholder="Territory Name">
+                <p>Date:</p>
+                <input class="inputs" type="text" placeholder="Date">
+                <p>Observations:</p>
+                <input class="inputs" type="text">
+            </div>
+            <div class="wasOver">
+                <p>Was Over?</p>
+                <div>
+                    <p>
+                        Yes 
+                        <input type="checkbox" name="yes" id="yes">
+                    </p>
+                    <p>
+                        No
+                        <input type="checkbox" name="no" id="no">
+                    </p>
+                </div>
+            </div>
+            <button class="bSendReport">
+                SEND REPORT
+            </button>
+        </form>
+    </div>
+</body>
+</html>

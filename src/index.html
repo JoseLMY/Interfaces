@@ -94,7 +94,7 @@
                     <p>Meeting: <span>Salon del Reino</span> </p>
                 </div>
                 <div class="sendReport">
-                    <button>Enviar Reporte</button>
+                    <button class="bViewFormReport">Send Report</button>
                 </div>
             </div>
             <div class="territoryMap">
@@ -163,6 +163,49 @@
                     </div>
                 </div>
             </div>
+            <div class="formContainer view">
+                <form action="" class="form">
+                    <div class="reportData">
+                        <div class="headerForm">
+                            <img class="exitReportData" src="/interfaces-separadas/assets/back.png" alt="">
+                            <p>REPORT:</p>
+                        </div>
+                        <p>Captain:</p>
+                        <input class="inputs" type="text" placeholder="Your Full Name">
+                        <p>Territory:</p>
+                        <input class="inputs" type="text" placeholder="Territory Name">
+                        <p>Date:</p>
+                        <input class="inputs" type="text" placeholder="Date">
+                        <p>Observations:</p>
+                        <input class="inputs" type="text">
+                    </div>
+                    <div class="wasOver">
+                        <p>Was Over?</p>
+                        <div>
+                            <p>
+                                Yes 
+                                <input type="checkbox" name="yes" id="yes">
+                            </p>
+                            <p>
+                                No
+                                <input type="checkbox" name="no" id="no">
+                            </p>
+                        </div>
+                    </div>
+                    <button class="bSendReport" type="button">
+                        SEND REPORT
+                    </button>
+                </form>
+            </div>
+            <div class="reportSendedContainer">
+                <div class="reportSended">
+                    <img src="/interfaces-separadas/assets/sended.png" alt="">
+                        <p>Awesome!</p>
+                        <p>Your report was sent successfully.</p>
+                        <button>Understood</button>
+                    </div>
+            </div>
+            
     </section>
     <script src="main.js"></script>
 </body>
