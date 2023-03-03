@@ -435,10 +435,9 @@ body{
 }
 .reportSendedContainer{
     width: 1200px;
-    display: flex;
-    justify-content: flex-end;
 }
 .reportSended{
+    margin: 10px 0 0 880px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
