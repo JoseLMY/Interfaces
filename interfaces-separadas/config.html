@@ -23,13 +23,21 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            width: 100%;
+            width: 99%;
         }
         .config{
             box-shadow: 1px 1px 12px 1px #919191;
+            width: 320px;
         }
         .profileData{
             display: flex;
+            background: #ffffff;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .profileData:hover{
+            box-shadow: 1px 1px 12px 1px #a5a5a5;
+            cursor: pointer;
         }
         .profileData img{
             margin: 5px 0 0 5px;
@@ -45,7 +53,7 @@
         }
         .p :nth-child(2){
             margin-top: 0;
-            color: var(--c2);
+            color: var(--c2)
         }
         .moreTools{
             margin: 40px 0 0 0 ;
@@ -56,18 +64,21 @@
         .moreTools button{
             display: flex;
             align-items: center;
-            margin-right: 10px;
+            width: 96%;
             height: 30px;
-            width: 100%;
-            margin: 0 15px 0 5px;
+            margin: 4px;
             border: none;
             background: var(--white);
         }
+        .moreTools button img {
+            width: 24px;
+            margin-right: 15px;
+        }
         .moreTools button:hover{
-            background: var(--c2);
+            background: var(--white);
             cursor: pointer;
-            border-radius: 5px;
-            margin: 0 15px 0 5px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 12px 1px #a5a5a5;
         }
         .bLogOut{
             margin-top: 40px;
@@ -84,6 +95,7 @@
         }
         .bLogOut button:hover{
             background: var(--c4);
+            cursor: pointer;
         }
     </style>
     <title>Config</title>
@@ -99,9 +111,18 @@
                 </div>
             </div>
             <div class="moreTools">
-                <button> <p>My Account</p></button>
-                <button><p>Settings & Privacity</p></button>
-                <button><p>Help & Support</p></button>
+                <button>
+                    <img src="/assets/user.png" alt="">
+                    <p>Edit my account</p>
+                </button>
+                <button>
+                    <img src="/assets/config.png" alt="">
+                    <p>Settings & Privacity</p>
+                </button>
+                <button>
+                    <img src="/assets/help.png" alt="">
+                    <p>Help & Support</p>
+                </button>
             </div>
             <div class="bLogOut">
                 <button>Log Out</button>
