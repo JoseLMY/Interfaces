@@ -103,7 +103,7 @@ body{
     width: 100%;
     height: 100%;
 }
-#containerTerritories{
+.containerTerritories{
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -111,7 +111,7 @@ body{
     border-right: 1px solid var(--c2);
 }
 
-#containerTerritories button{
+.containerTerritories button{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,12 +122,13 @@ body{
     align-items: flex-start;
 }
 .territoryData p{
-    font-size: 18px;
+    font-size: 19px;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.territoryData p:nth-child(2){
+.territoryData :nth-child(2){
     color: var(--c2);
-    font-size: var(--lg);
+    font-size: 16px;
 }
 .imgTerritorie{
     width: 40px;
@@ -139,7 +140,8 @@ body{
     margin-top: 5px;
 }
 .buttonTerritory:hover{
-    background: var(--c1);
+    background: #f1f1f1;
+    box-shadow: 1px 1px 4px 0 black;
     cursor: pointer;
 }
 .seeTerritoriesContainer{
@@ -170,13 +172,20 @@ body{
     font-size: 16px;
 }
 .territoryMap{
-    height: 400px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
     background: #f1f1f1;
     overflow-y: scroll;
+}
+.territoryMap::-webkit-scrollbar{
+    width: 10px;
+}
+.territoryMap::-webkit-scrollbar-thumb{
+    background: var(--c1);
+    border-radius: 10px;
 }
 
 .sendReport{
@@ -217,15 +226,30 @@ body{
     border-radius: 16px;
     overflow: hidden;
 }
-.profileData{
+.profileData{ 
     display: flex;
-    background: #ffffff;
-    border-radius: 10px;
-    margin: 10px;
+    align-items: center;
+    width: 91%;
+    height: 60px;
+    margin: 10px 0 0 8px;
+    padding: 0 0 0 12px;
+    border: none;
+}
+.decorationProfileData{
+    display: flex;
+    border-radius: 4px;
+    margin: 10px 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: 1px 1px 6px 0 #979797;
+}
+.decorationProfileData:hover{
+    background: #e2e2e2;
+    box-shadow: 1px 1px 6px 0 #656565;
 }
 .profileData:hover{
-    box-shadow: 1px 1px 12px 1px #a5a5a5;
     cursor: pointer;
+    border-radius: 8px;
 }
 .profileData img{
     margin: 5px 0 0 5px;
@@ -239,9 +263,15 @@ body{
 .p p{
     margin: 5px 0 0 22px;
 }
+.p :nth-child(1){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+}
 .p :nth-child(2){
     margin-top: 0;
-    color: var(--c2)
+    color:#686868;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
 }
 .moreTools{
     margin: 40px 0 0 0 ;
@@ -252,9 +282,10 @@ body{
 .moreTools button{
     display: flex;
     align-items: center;
-    width: 96%;
-    height: 30px;
-    margin: 4px;
+    width: 95%;
+    height: 50px;
+    margin: 8px 8px;
+    padding: 0 0 0 12px;
     border: none;
     background: var(--white);
 }
@@ -263,27 +294,29 @@ body{
     margin-right: 15px;
 }
 .moreTools button:hover{
-    background: var(--white);
     cursor: pointer;
-    border-radius: 15px;
-    box-shadow: 1px 1px 12px 1px #a5a5a5;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px 0 #5c5c5c;
 }
 .bLogOut{
-    margin-top: 40px;
+    margin: 40px 0;
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 .bLogOut button{
-    height: 30px;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    height: 50px;
     border: none;
-    color: rgb(255, 255, 255);
-    background: #ff9f44;
-    width: 100%;
+    color: black;
+    width: 80%;
+    border-radius: 6px;
 }
 .bLogOut button:hover{
-    background: var(--c4);
     cursor: pointer;
+    box-shadow: 1px 1px 8px 0 black;
+    color: red;
 }
 .messagesContainer{
     background: var(--white);
@@ -437,8 +470,7 @@ body{
     width: 1200px;
 }
 .reportSended{
-    margin: 10px 0 0 880px;
-    margin-top: 20px;
+    margin: 160px 0 0 880px;
     display: flex;
     flex-direction: column;
     align-items: center;
