@@ -440,6 +440,7 @@ body{
     height: 30px;
     margin: 0 0 22px 22px;
     border-radius: 10px;
+    outline: none;
 }
 .reportData :nth-child(9){
     height: 90px;
