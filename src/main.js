@@ -11,10 +11,14 @@ const exitReportData = document.querySelector(".exitReportData")
 exitReportData.addEventListener("click", fExitReportData)
 const bSendReport = document.querySelector(".bSendReport")
 bSendReport.addEventListener("click", fSendedReport)
-const reportSended = document.querySelector(".reportSended")
-const bReportSended = document.querySelector(".bReportSended")
-bReportSended.addEventListener("click", finishReport)
 const reportSendedContainer = document.querySelector(".reportSendedContainer")
+const createMessageContainer = document.querySelector(".createMessageContainer")
+const bCreateMessage = document.querySelector(".bCreateMessage")
+bCreateMessage.addEventListener("click", viewCreateMessage)
+const exitCreatMessage = document.querySelector(".exitCreatMessage")
+exitCreatMessage.addEventListener("click", fExitCreatMessage)
+const bSendMessage = document.querySelector(".bSendMessage")
+bSendMessage.addEventListener("click", finishSendMassage)
 
 function viewSettings (){
     if (config.classList.contains("view")){
@@ -59,12 +63,30 @@ function fSendedReport (){
         reportSendedContainer.classList.remove("view")
         formContainer.classList.add("view")
     }
-}
-function finishReport(){
-    if (reportSended.classList.contains("view")){
-        reportSended.classList.remove("view")
-    } else {
-        bViewFormReport.classList.remove("view")
+
+    setTimeout(function() {
         reportSendedContainer.classList.add("view")
+        bViewFormReport.classList.remove("view")
+    },3000)
+}
+
+function viewCreateMessage(){
+    if (createMessageContainer.classList.contains("view")){
+        createMessageContainer.classList.remove("view")
+        messagesContainer.classList.add("view")
+    } else {
+        createMessageContainer.classList.add("view")
     }
+}
+function fExitCreatMessage(){
+    createMessageContainer.classList.add("view")
+    messagesContainer.classList.remove("view")
+}
+function finishSendMassage (){
+    createMessageContainer.classList.add("view")
+    reportSendedContainer.classList.remove("view")
+
+    setTimeout(function() {
+        reportSendedContainer.classList.add("view")
+    },3000)
 }

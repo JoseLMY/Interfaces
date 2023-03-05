@@ -133,9 +133,9 @@
             </div>
             <div class="messagesContainer view">
                 <div class="headerMessages">
-                    <img src="/interfaces-separadas/assets/back.png" alt="Back">
+                    <img src="/interfaces-separadas/assets/iconMessage.png" alt="">
                     <p>Messages</p>
-                    <button>Create Message</button>
+                    <button class="bCreateMessage">Create Message</button>
                 </div>
                 <div class="everyMessages">
                     <div class="message">
@@ -202,10 +202,23 @@
             <div class="reportSendedContainer view">
                 <div class="reportSended">
                     <img src="/interfaces-separadas/assets/sended.png" alt="">
-                        <p>Awesome!</p>
-                        <p>Your report was sent successfully.</p>
-                        <button class="bReportSended">Understood</button>
+                        <p>Excelent!</p>
+                        <p>Sent successfully.</p>
                     </div>
+            </div>
+            <div class="createMessageContainer view">
+                <div class="headerCreatMessages">
+                    <div class="headerBack">
+                        <img class="exitCreatMessage" src="/interfaces-separadas/assets/back.png" alt="Back">
+                        <p>New Message</p>
+                    </div>
+                    <button class="bSendMessage">Send Message</button>
+                </div>
+                <div class="messageContent">
+                    <input class="inputMessage" type="email" placeholder="Destinatario" required>
+                    <input class="inputMessage" type="text" placeholder="Asunto">
+                    <textarea class="texArea" type="text" placeholder="Message..."></textarea>
+                </div>
             </div>
             
     </section>
