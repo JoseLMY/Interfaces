@@ -324,7 +324,7 @@ body{
     z-index: 1;
     margin: 0 10px 0 930px;
     width: 520px;
-    height: 420px;
+    height: 640px;
     border-radius: 16px;
     box-shadow: 1px 1px 8px 0 black;
     overflow: hidden;
@@ -366,7 +366,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     margin: 10px 10px 0 10px;
-    height: 350px;
+    height: 550px;
     width: 97%;
     overflow-y: scroll;
 }
@@ -441,6 +441,8 @@ body{
 }
 .reportData :nth-child(9){
     height: 90px;
+    resize: none;
+    padding: 10px;
 }
 .wasOver p{
     margin: 0 0 0 25px;
@@ -501,7 +503,7 @@ body{
     background: white;
     margin: 0 0 0 930px;
     width: 520px;
-    height: 420px;
+    height: 640px;
     border-radius: 16px;
     box-shadow: 1px 1px 8px 0 black;
     overflow: hidden;
@@ -516,12 +518,13 @@ body{
 .headerBack{
     display: flex;
     align-items: center;
+    width: 100%
 }
 .headerBack img{
     margin: 0 0 0 8px;
 }
 .headerBack p{
-    margin: 0 0 0 18px;
+    margin: 0 0 0 25%;
     font-size: 20px;
     font-family:  sans-serif;
 }
@@ -535,7 +538,7 @@ body{
     background: #e0e0e0;
     cursor: pointer;
 }
-.headerCreatMessages button{
+.bSendMessage{
     font-size: 19px;
     color: #5c5c5c;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -544,9 +547,9 @@ body{
     border: 1px solid #5c5c5c;
     border-radius: 6px;
     background: white;
-    margin-right: 15px;
+    margin: 0 0 0 25%;
 }
-.headerCreatMessages button:hover{
+.bSendMessage:hover{
     cursor: pointer;
     color: #3db600;
     background: #e0e0e092;
@@ -569,7 +572,7 @@ body{
     border: none;
     padding: 15px;
     box-sizing: border-box;
-    height: 240px;
+    height: 420px;
     background: #f1f1f1;
     border-radius: 8px;
     margin: 15px 0 10px 0;
