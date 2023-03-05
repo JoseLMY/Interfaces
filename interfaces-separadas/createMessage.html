@@ -85,13 +85,18 @@
             border-bottom: 1px solid rgb(117, 117, 117);
             margin: 1px 0 0 10px 0;
         }
-        .messageContent :nth-child(3){
+        .texArea{
+            outline: none;
+            border: none;
+            padding: 15px;
+            box-sizing: border-box;
             height: 240px;
-            background: #efefef;
+            background: #f1f1f1;
             border-radius: 8px;
             margin: 15px 0 10px 0;
             resize: none;
         }
+        
         .inputMessage{
             border: none;
             margin: 1px;
@@ -99,6 +104,7 @@
             background: white;
             outline: none;
         }
+        
     </style>
     <title>Messages</title>
 </head>
@@ -114,7 +120,7 @@
         <div class="messageContent">
             <input class="inputMessage" type="email" placeholder="Destinatario" required>
             <input class="inputMessage" type="text" placeholder="Asunto">
-            <textarea class="inputMessage" type="text" placeholder="Message..."></textarea>
+            <textarea class="texArea" type="text" placeholder="Message..."></textarea>
         </div>
     </div>
 </body>
