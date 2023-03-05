@@ -49,11 +49,9 @@ function viewFormReport(){
 function fExitReportData(){
     if (bViewFormReport.classList.contains("view")){
         formContainer.classList.add("view")
-        reportSended.classList.remove("view")
         bViewFormReport.classList.remove("view")
     } else {
         formContainer.classList.remove("view")
-        reportSended.classList.add("view")
     }
 }
 function fSendedReport (){
