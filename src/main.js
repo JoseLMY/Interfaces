@@ -32,6 +32,7 @@ function viewMessages (){
     if (messagesContainer.classList.contains("view")){
             messagesContainer.classList.remove("view")
             config.classList.add("view")
+            createMessageContainer.classList.add("view")
     } else {
         messagesContainer.classList.add("view")
     }
