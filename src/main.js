@@ -19,6 +19,37 @@ const exitCreatMessage = document.querySelector(".exitCreatMessage")
 exitCreatMessage.addEventListener("click", fExitCreatMessage)
 const bSendMessage = document.querySelector(".bSendMessage")
 bSendMessage.addEventListener("click", finishSendMassage)
+const sectionLogin = document.querySelector(".sectionLogin")
+const bCreateAccountTopBar = document.querySelector(".bCreateAccountTopBar")
+bCreateAccountTopBar.addEventListener("click", fCreateAccountTopBar)
+const createAccountContainer = document.querySelector(".createAccountContainer")
+const bCancelCreateAccountTopBar = document.querySelector(".bCancelCreateAccountTopBar")
+bCancelCreateAccountTopBar.addEventListener("click", fCancelCreateAccount)
+const BCreate = document.querySelector(".BCreate")
+BCreate.addEventListener("click", fLogin)
+
+const loginContainer = document.querySelector(".loginContainer")
+const sectionProfile = document.querySelector(".sectionProfile")
+const BLogin = document.querySelector(".BLogin")
+BLogin.addEventListener("click", fLogin)
+
+function fLogin(){
+    sectionLogin.classList.add("view")
+    sectionProfile.classList.remove("view")
+    createAccountContainer.classList.add("view")
+}
+
+function fCreateAccountTopBar(){
+    loginContainer.classList.add("view")
+    bCreateAccountTopBar.classList.add("view")
+    createAccountContainer.classList.remove("view")
+    bCancelCreateAccountTopBar.classList.remove("view")
+}
+function fCancelCreateAccount(){
+    createAccountContainer.classList.add("view")
+    loginContainer.classList.remove("view")
+    bCreateAccountTopBar.classList.remove("view")
+}
 
 function viewSettings (){
     if (config.classList.contains("view")){

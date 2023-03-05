@@ -13,12 +13,141 @@ body{
     margin: 0;
     font-family: sans-serif;
 }
-.viewSections{
-    display: none;
-}
+
 .view{
     display: none;
 }
+
+/* SECTION THE LOGIN */
+
+.backgroundSectionLogin{
+    height: 741px;
+    background: #eaeaea;
+}
+
+.topBarContainer{
+    display: flex;
+    background: var(--c1);
+}
+.logoTopBar{
+    width: 70px;
+}
+.topBar{
+    display: flex;
+}
+.topBar p{
+    color: var(--white);
+    font-size: var(--bd);
+    margin: 0 0 0 20px;
+    display: flex;
+    align-items: center;
+}
+.bCreateAccountTopBarContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.bCreateAccountTopBar{
+    background: var(--c1);
+    border: 1px solid var(--white);
+    color: var(--white);
+    border-radius: 6px;
+    width: 200px;
+    height: 64%;
+    margin-right: 30px;
+}
+.bCreateAccountTopBar:hover{
+    background: #5495eb;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 0 black;
+}
+.bCancelCreateAccountTopBar{
+    font-size: 16px;
+    margin-left: 60px;
+    border: none;
+    border-radius: 6px;
+    width: 120px;
+    height: 36px;
+}
+.bCancelCreateAccountTopBar:hover{
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 0 black;
+}
+.loginContainer{
+    margin: 30px 0 0 320px;
+}
+.inicioSesion{
+    background: white;
+    width: 840px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 8px 0 rgb(140, 140, 140);
+}
+.dates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 320px;
+    border-radius: 12px;
+    background: white;
+}
+.dates p{
+    margin: 32px 0;
+    font-size: var(--md);
+}
+.input{
+    width: 460px;
+    height: 36px;
+    border-top: 0 solid ;
+    border-left: 0 solid;
+    border-right: 0 solid;
+    margin: 10px 0 10px 0;
+    outline: none;
+}
+.BLoginContainer{
+    width: 100%;
+    margin-top: 20px;
+
+}
+.BLogin{
+    width: 240px;
+    height: 36px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: var(--c1);
+    color: var(--white);
+    border: none;
+    margin-left: 300px;
+}
+.BLogin:hover{
+    background: #5495eb;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 0 black;
+}
+.forgotContainer{
+    margin-top: 36px;
+    width: 100%;
+}
+.forgot{
+    text-decoration: none;
+    color: var(--c1);
+    margin: 15px 0 15px 340px;
+}
+.forgot:hover{
+    color: var(--c4);
+    cursor: pointer;
+    border: 1px solid var(--c4);
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* SECTION PRIMARY CONTAINER */
+
 #header{
     display: flex;
     background: var(--c1);
@@ -589,4 +718,51 @@ body{
     height: 22px ;
     background: white;
     outline: none;
+}
+
+.createAccount{
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 8px 0 rgb(140, 140, 140);
+    width: 840px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 30px 0 0 320px;
+}
+.titleCreateAccount{
+    color: var(--c1);
+    font-size: var(--bd);
+    margin: 0 0 20px 0;
+}
+.datesCreateAccount{
+    display: flex;
+    flex-direction: column;
+    width: 503px;
+}
+.datesCreateAccount p{
+    margin: 25px 0 0 0;
+}
+.datesCreateAccount p:nth-child(15){
+    color: #000000b0;
+    font-size: 14px;
+}
+.containerBCreate{
+    margin-top: 20px;
+    width: 100%;
+}
+.BCreate{
+    width: 240px;
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+    background: var(--c1);
+    color: var(--white);
+    margin-left: 164px;
+}
+.BCreate:hover{
+    background: #5495eb;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 0 black;
 }

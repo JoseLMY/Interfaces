@@ -19,15 +19,13 @@
         body{
             margin: 0;
         }
-        #createAccount{
+        .createAccount{
             display: flex;
             flex-direction: column;
             align-items: center;
             border: 1px solid var(--black);
-            width: 360px;
+            width: 840px;
             margin: 20px 0 0 20px;
-            border-radius: 8px;
-            border: var(--c1) solid 3px;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -39,10 +37,10 @@
         .datesCreateAccount{
             display: flex;
             flex-direction: column;
-            width: 260px;
+            width: 503px;
         }
         .datesCreateAccount p{
-            margin: 10px 0 3px 0;
+            margin: 25px 0 0 0;
         }
         .datesCreateAccount p:nth-child(15){
             color: #000000b0;
@@ -52,13 +50,17 @@
             margin-top: 20px;
         }
         .input{
-            width: 240px;
-            height: 24px;
-            border-radius: 5px;
+            width: 460px;
+            height: 36px;
+            border-top: 0 solid ;
+            border-left: 0 solid;
+            border-right: 0 solid;
+            margin: 36px 0 0 0;
+            outline: none;
         }
         .BCreate{
             width: 240px;
-            height: 36px;
+            height: 32px;
             border-radius: 5px;
             border: none;
             background: var(--c1);
@@ -67,36 +69,29 @@
         .BCreate:hover{
             background: #5495eb;
             cursor: pointer;
+            box-shadow: 1px 1px 8px 0 black;
         }
     </style>
     <title>Create Account</title>
 </head>
 <body>
-    <section id="createAccount">
+    <div class="createAccount">
         <p class="titleCreateAccount">
             Create Account:
         </p>
         <div class="datesCreateAccount">
-            <p>Full Name</p>
-            <input class="input" type="text" placeholder="full name">
-            <p>Last Name</p>
-            <input class="input" type="text" placeholder="last name">
-            <p>Congregation</p>
+            <input class="input" type="text" placeholder="Full name">
+            <input class="input" type="text" placeholder="Last name">
             <input class="input" type="text" placeholder="congregation">
-            <p>Age</p>
-            <input class="input" type="text" placeholder="age">
-            <p>Phone</p>
-            <input class="input" type="tel" placeholder="phone">
-            <p>Email</p>
-            <input class="input" type="email" placeholder="email">      
-            <p>Password</p>
-            <input class="input" type="password" placeholder="password">
+            <input class="input" type="text" placeholder="Age">
+            <input class="input" type="tel" placeholder="Phone">
+            <input class="input" type="email" placeholder="Email">      
+            <input class="input" type="password" placeholder="Password">
             <p>*NOTE: The email will be your username</p> 
         </div>
         <div class="containerBCreate">
             <input class="BCreate" type="button" value="CREATE">
-            <!-- <button class="BCreate">CREATE</button> -->
         </div>
-    </section>
+    </div>
 </body>
 </html>
