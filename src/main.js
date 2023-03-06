@@ -19,7 +19,6 @@ const exitCreatMessage = document.querySelector(".exitCreatMessage")
 exitCreatMessage.addEventListener("click", fExitCreatMessage)
 const bSendMessage = document.querySelector(".bSendMessage")
 bSendMessage.addEventListener("click", finishSendMassage)
-const sectionLogin = document.querySelector(".sectionLogin")
 const bCreateAccountTopBar = document.querySelector(".bCreateAccountTopBar")
 bCreateAccountTopBar.addEventListener("click", fCreateAccountTopBar)
 const createAccountContainer = document.querySelector(".createAccountContainer")
@@ -27,16 +26,35 @@ const bCancelCreateAccountTopBar = document.querySelector(".bCancelCreateAccount
 bCancelCreateAccountTopBar.addEventListener("click", fCancelCreateAccount)
 const BCreate = document.querySelector(".BCreate")
 BCreate.addEventListener("click", fLogin)
-
-const loginContainer = document.querySelector(".loginContainer")
-const sectionProfile = document.querySelector(".sectionProfile")
+const buttonLogOut = document.querySelector(".buttonLogOut")
+buttonLogOut.addEventListener("click", logOut)
 const BLogin = document.querySelector(".BLogin")
 BLogin.addEventListener("click", fLogin)
+const forgotContainer = document.querySelector(".forgotContainer")
+forgotContainer.addEventListener("click", fForgotContainer)
+const loginContainer = document.querySelector(".loginContainer")
+const forgotPassword = document.querySelector(".forgotPassword")
+const bResetPassword = document.querySelector(".bResetPassword")
+bResetPassword.addEventListener("click", fEMailSent)
+const eMailSent = document.querySelector(".eMailSent")
+const buttoneEMailSent=document.querySelector(".buttoneEMailSent")
+buttoneEMailSent.addEventListener("click", finishForgotPasswor)
+
+//EVERY CONTAINERS//
+
+const sectionProfile = document.querySelector(".sectionProfile")
+const sectionLogin = document.querySelector(".sectionLogin")
+
 
 function fLogin(){
     sectionLogin.classList.add("view")
     sectionProfile.classList.remove("view")
     createAccountContainer.classList.add("view")
+}
+function logOut (){
+    sectionLogin.classList.remove("view")
+    loginContainer.classList.remove("view")
+    sectionProfile.classList.add("view")
 }
 
 function fCreateAccountTopBar(){
@@ -47,6 +65,22 @@ function fCreateAccountTopBar(){
 }
 function fCancelCreateAccount(){
     createAccountContainer.classList.add("view")
+    loginContainer.classList.remove("view")
+    bCreateAccountTopBar.classList.remove("view")
+}
+
+function fForgotContainer(){
+    loginContainer.classList.add("view")
+    forgotPassword.classList.remove("view")
+    bCreateAccountTopBar.classList.add("view")
+}
+
+function fEMailSent(){
+    eMailSent.classList.remove("view")
+    forgotPassword.classList.add("view")
+}
+function finishForgotPasswor(){
+    eMailSent.classList.add("view")
     loginContainer.classList.remove("view")
     bCreateAccountTopBar.classList.remove("view")
 }
